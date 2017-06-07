@@ -1,0 +1,26 @@
+<md-toolbar >
+ <button md-button (click)="clickonmovies()">Movies</button>
+  <button md-button>Home</button>
+  <button md-button>About</button>
+  <button md-button>Contact</button>
+  <app-search-bar></app-search-bar>
+</md-toolbar>
+<div *ngIf="a">
+<md-grid-list cols="2" rowHeight="1:1">
+<div *ngFor="let ab of a">
+<md-grid-tile>
+<md-card>
+
+<p>{{ab.Title}}</p>
+<p>{{ab.Year}}</p>
+<img md-card-image class="poster-image" src="{{ab.Poster}}"/>
+
+<md-card-actions>
+        <button md-button id="comment">Comment</button>
+         
+      </md-card-actions>
+      </md-card>
+</md-grid-tile>
+</div>
+</md-grid-list>
+</div>

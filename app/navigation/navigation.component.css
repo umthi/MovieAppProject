@@ -1,0 +1,20 @@
+md-toolbar
+{
+	background: black;
+}
+button
+{
+	
+	margin-right: 10px;
+}
+md-card
+{
+	margin-top: 10px;
+}
+
+
+
+.poster-image
+{
+	height:350px;
+}

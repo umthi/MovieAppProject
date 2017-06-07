@@ -1,0 +1,20 @@
+<div *ngIf="a">
+<md-grid-list cols="2" rowHeight="1:1">
+<div *ngFor="let ab of a">
+<md-grid-tile>
+<md-card>
+
+<p>{{ab.title}}</p>
+<p>{{ab.release_date}}</p>
+<img md-card-image class="poster-image" src="{{ab.poster_path}}"/>
+
+<md-card-actions>
+        <button md-button id="comment">Comment</button>
+         <button md-button (click)="ondel(ab.id)">Delete</button>
+
+      </md-card-actions>
+      </md-card>
+</md-grid-tile>
+</div>
+</md-grid-list>
+</div>

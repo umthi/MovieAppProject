@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.stackroute.ng2boot.Ng2bootApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.399 sec - in com.stackroute.ng2boot.Ng2bootApplicationTests

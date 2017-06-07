@@ -1,0 +1,36 @@
+
+
+
+<md-grid-list cols="2" rowHeight="1:1">
+
+<div *ngFor="let a of movies">
+<md-grid-tile>
+ <md-card>
+  <md-card-header>
+   
+   <md-card-title  class="title" ><strong>Movie Name : {{a.title}}</strong></md-card-title>
+   <md-card-subtitle class="title" ><strong>Year : {{a.release_date}}</strong></md-card-subtitle>
+
+  </md-card-header>
+
+     <img md-card-image class="poster-image" src="{{a.poster_path}}">
+ 
+ <md-card-content>
+      <p>
+  <md-input-container class="example-full-width">
+   <input mdInput #movie placeholder="enter your description" >
+  </md-input-container>
+  </p>
+ </md-card-content>
+ 
+      <md-card-actions>
+        <button md-button id="comment">Comment</button>
+         <button md-button (click)="onsave(a)">Save</button>
+               </md-card-actions>
+  </md-card>
+</md-grid-tile>
+</div>
+
+
+
+</md-grid-list>
